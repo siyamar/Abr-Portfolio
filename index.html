@@ -1,385 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Abdur Rahman Resume</title>
-    <!-- Meta -->
+    <title>Abdur Rahman - Resume</title>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Bootstrap 4 Portfolio/Resume Theme for Developers">
-    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
-    <link rel="shortcut icon" href="portfolio-folder_10548497.png">  
-    
-    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
-    
-    <!-- FontAwesome JS -->
-    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
-    
-    <!-- Global CSS -->
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
-    
-    <!-- github calendar css -->
-    <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar.css">
-    <!-- github acitivity css -->    
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
-    <link rel="stylesheet" href="assets/plugins/github-activity/github-activity-0.1.5.min.css">
-    
-    <!-- Theme CSS -->  
-    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
-    
-</head> 
+    <meta name="description" content="Abdur Rahman Resume & Portfolio">
+    <link rel="shortcut icon" href="assets/images/portfolio-folder_10548497.png">  
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
+    <style>
+        body { font-family: 'Roboto', sans-serif; background-color: #f8fafc; }
+        .sidebar { background-color: #1E5F74; color: white; height: 100vh; position: fixed; width: 500px; padding: 2rem; }
+        .content-area { margin-left: 502px; padding: 2rem; background-color: white; min-height: 100vh; }
+        .profile-image { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 4px solid white; }
+        .section-title { color: #1E5F74; border-bottom: 2px solid #1E5F74; padding-bottom: 8px; margin-bottom: 1rem; }
+        .experience-item { margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid #e2e8f0; }
+        .download-btn { background-color: transparent; border: 2px solid white; color: white; padding: 8px 16px; border-radius: 20px; font-weight: 500; transition: all 0.3s; }
+        .download-btn:hover { background-color: white; color: #1E5F74; }
+        .contact-info p { margin-bottom: 0.5rem; display: flex; align-items: center; }
+        .contact-info i { margin-right: 0.5rem; width: 20px; text-align: center; }
+        .resume-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; }
+        .social-icons { display: flex; gap: 1rem; }
+        .social-icons a { color: #1E5F74; font-size: 1.25rem; transition: color 0.3s; }
+        .social-icons a:hover { color: #0f4c75; }
+        @media (max-width: 768px) {
+            .sidebar { position: static; width: 100%; height: auto; padding: 1.5rem; }
+            .content-area { margin-left: 0; padding: 1.5rem; }
+            .resume-header { flex-direction: column; align-items: flex-start; gap: 1rem; }
+            .social-icons { align-self: flex-end; }
+        }
+    </style>
+</head>
+<body class="flex">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="flex flex-col items-center mb-8">
+            <img src="assets/images/siam.jpg" alt="Abdur Rahman" class="profile-image mb-4">
+            <h1 class="text-2xl font-bold">Abdur Rahman</h1>
+            <h2 class="text-lg">Full Stack Developer</h2>
+        </div>
 
-<body>
-    <!-- ******HEADER****** --> 
-    <header class="header">
-        <div class="container clearfix">                       
-            <img style="height:112px; border-radius:54%" class="profile-image img-fluid float-left" src="assets/images/siam.jpg" alt="Jh" />
-            <div class="profile-content float-left">
-                <h1 class="name">Abdur Rahman</h1>
-                <h2 style='display:inline-flex' class="desc">Web Developer <p style='color: black; font-size: 13px; margin-top: 9px;margin-left: 7px;'>(Python, Web2py, React, Node, Express, MySQL, Mongodb)</p></h2>   
-                <ul class="social list-inline">
-                    <li class="list-inline-item"><a href="https://www.facebook.com/Abdur9955" target="_blank"><i class="fab fa-facebook"></i></a></li>                   
-                    <li class="list-inline-item"><a href="https://www.linkedin.com/in/abdur-rahman-3546662aa" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-                    <li class="list-inline-item"><a href="https://github.com/siyamar? tab=repositories"><i class="fab fa-github-alt"  target="_blank"></i></a></li>    
-                    <!-- <li class="list-inline-item"><a href="https://stackoverflow.com/users/11220382/jobaer-sourav" target="_blank"><i class="fab fa-stack-overflow"></i></a></li>    -->
-                </ul> 
-            </div><!--//profile-->
-            <a href="tel:01624655288" class="btn btn-cta-primary float-right"><i class="fas fa-paper-plane"></i> Contact Me</a>              
-        </div><!--//container-->
-    </header><!--//header-->
-    
-    <div class="container sections-wrapper">
-        <div class="row">
-            <div class="primary col-lg-8 col-12">
-                <section class="about section">
-                    <div class="section-inner">
-                        <h2 class="heading">About Me</h2>
-                        <div class="content">
-                            <p>My name is Abdur Rahman. I am eager to pursue a challenging career in a leading organization where I can apply my skills and contribute to its growth. I aim to secure a position in a reputable company that allows me to expand my knowledge, skills, and experience.
-                            </p>
-                         
-                        </div><!--//content-->
-                    </div><!--//section-inner-->                 
-                </section><!--//section-->
-    
-               <section class="latest section">
-                    <div class="section-inner">
-                        <h2 class="heading">Latest Projects</h2>
-                        <div class="content">    
-                            <hr class="divider" />
-                            <div class="item row">
-                                <a class="col-md-4 col-12" href="https://bistro-boss-a2461.firebaseapp.com/">
-                                <img class="img-fluid project-image" src="assets/images/siamProjects/Screenshot_1.png" alt="project name" />
-                                </a>
-                                <div class="desc col-md-8 col-12">
-                                    <h3 class="title"><a >
-                                        Restaurant Management System</a></h3>
-                                    <p class="mb-2">
-                                    
-                                        Designed and implemented a dynamic Restaurant Management System using React with user authentication, order customization, and seamless payment features. Admin functionalities include menu updates and a dashboard for profit/loss analysis through pie charts.
-                                        
-                                        <p><a class="more-link" href="https://github.com/siyamar/Restaurant-Boss-Client" target="_blank">
-                                            <i class="fas fa-external-link-alt"></i>Find out it on github</a></p>
-                                </div><!--//desc-->                          
-                            </div>
-                            
-                             <div class="item row">
-                                <a class="col-md-4 col-12">
-                                <img class="img-fluid project-image" src="assets/images/siamProjects/Screenshot_4.png" alt="project name" />
-                                </a>
-                                <div class="desc col-md-8 col-12">
-                                    <h3 class="title"><a >
-                                        Keto Journey</a></h3>
-                                    <p class="mb-2">Developed "Keto Journey" using React, Tailwind CSS, and Node.js with user authentication, blog creation, and commenting features. Users enjoy a responsive and visually appealing home page showcasing recent posts, an About Us section, News list, and Gallery. Privacy controls restrict blog creators from commenting but allow updates, along with many more features.
-                                    </p>
-                                    <p><a class="more-link" href="https://github.com/siyamar/Keto-Diet-Client" target="_blank">
-                                        <i class="fas fa-external-link-alt"></i>Find out it on github</a></p>
-                                </div><!--//desc-->                          
-                            </div>
-                            
-                            <!--//item-->
-                            
-                            <div class="item row">
-                                <a class="col-md-4 col-12" href="https://the-dragon-news-nine.vercel.app/" >
-                                <img class="img-fluid project-image" src="assets/images/siamProjects/Screenshot_7.png" alt="project name" />
-                                </a>
-                                <div class="desc col-md-8 col-12">
-                                    <h3 class="title"><a>News Portal</a></h3>
-                                    <p class="mb-2">It is a news website where there are many categories of news and among them the most recent will be first and clicking on one will show its details.</p>
-                                    <p><a class="more-link" href="https://github.com/siyamar/Dragon-News-Next.js-Client"
-                                          target="_blank"><i class="fas fa-external-link-alt"></i>Find  out it on github</a></p>
-                                </div><!--//desc-->                          
-                            </div><!--//item-->
-                            
-                             <div class="item row">
-                                <a class="col-md-4 col-12" >
-                                <img class="img-fluid project-image" src="assets/images/siamProjects/Screenshot_8.png" alt="project name" />
-                                </a>
-                                <div class="desc col-md-8 col-12">
-                                    <h3 class="title"><a >
-                                        Dashboard</a></h3>
-                                    <p class="mb-2">Developed a web-based Dashboard application using Next.js to manage orders and users efficiently. It features intuitive bar and pie charts for data visualization, user authentication, and secure login/logout. The clean, responsive design ensures seamless functionality across all devices.
-                                    </p>
-                                    <p><a class="more-link" href="https://github.com/siyamar/dashboard-client" target="_blank">
-                                        <i class="fas fa-external-link-alt"></i>Find out it in github</a></p>
-                                </div><!--//desc-->                          
-                            </div><!--//item-->
-                            
-                            <div class="item row">
-                                <a class="col-md-4 col-12" href="https://siyamar.github.io/assignment-3-fruit-brust/#slide1">
-                                <img class="img-fluid project-image" src="assets/images/siamProjects/Screenshot_11.png" alt="project name" />
-                                </a>
-                                <div class="desc col-md-8 col-12">
-                                    <h3 class="title"><a >Fruit Showcase</a></h3>
-                                    <p class="mb-2">Developed a fruit web application using HTML, CSS, and Tailwind CSS with a focus on clean, modern design. The application features a responsive layout, vibrant colors, and visually appealing components to showcase different fruits. Tailwind CSS was used extensively to ensure a seamless and aesthetic user experience across all devices.</p>
-                                    <p><a class="more-link" href="https://github.com/siyamar/assignment-3-fruit-brust" target="_blank">
-                                        <i class="fas fa-external-link-alt"></i>Find out it in github</a></p>
-                                </div><!--//desc-->                          
-                            </div><!--//item-->                            
-                            <div class="item row">
-                                <a class="col-md-4 col-12" href="https://siyamar.github.io/Abdur-Rahman-Portfolio/">
-                                <img class="img-fluid project-image" src="assets/images/siamProjects/Screenshot_9.png" alt="project name" />
-                                </a>
-                                <div class="desc col-md-8 col-12">
-                                    <h3 class="title"><a >Personal Resume</a></h3>
-                                    <p class="mb-2"> The purpose of a personal resume, professional qualifications statement or curriculum vitae generally is the same: to get an interview. ... You may also use your personal resume to
-                                        convince recruiters to select you for an interview based on how you present your professional skills and abilities on paper.</p>
-                                    <p><a class="more-link" href="https://github.com/siyamar/Abdur-Rahman-Portfolio" target="_blank">
-                                        <i class="fas fa-external-link-alt"></i>Find out it in github</a></p>
-                                </div><!--//desc-->                          
-                            </div><!--//item-->
-                            
-                        </div><!--//content-->  
-                    </div><!--//section-inner-->                
-                </section><!--//section-->
-                
+        <!-- Contact -->
+        <div class="contact-info mb-6">
+            <p><i class="fas fa-envelope"></i> ab.rahmansiyam@gmail.com</p>
+            <p><i class="fas fa-phone"></i> 01882799557</p>
+            <p><i class="fas fa-map-marker-alt"></i> Uttara, Dhaka</p>
+        </div>
 
-                <section class="experience section">
-                    <div class="section-inner">
-                        <h2 class="heading">Work Experience</h2>
-                        <div class="content">
-                            <div class="item">
-                                <h3 class="title">Python Developer (Trainee) at Eon System<span class="place"><a href="eonsystemsbd.com"> -Eon System</a></span> <span class="year">(Jan 2025 - Now)</span></h3>
-                                <p> Corrently i am working on Eon System with a designation of Python Developer (Trainee). Here i take care of both frontend & back end. Also I am take caring of project
-                                    management of different software </p>
-                            </div>
-            
-                            <!-- //item -->
-                            
-                        </div><!--//content-->  
-                    </div>             
-                </section>
-                <section class="experience section">
-                    <div class="section-inner">
-                        <h2 class="heading">Certification</h2>
-                        <div class="content">
-                            <div class="item">
-                                <h3 class="title">Web Development</h3>
-                                <p> Programming Hero 2023</p>
-                            
-                            <!--//item-->
+        <button class="download-btn w-full mb-8" onclick="window.open('Abdur-Rahman-CV1.pdf', '_blank')">
+            <i class="fas fa-download mr-2"></i> Download CV
+        </button>
 
-                            
-                        </div>
-                    </div>               
-                </section>
-                
+        <!-- Skills -->
+        <div class="mb-8">
+            <h3 class="text-xl font-semibold mb-4">Skills</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                    <h4 class="font-medium">Technical Skills</h4>
+                    <ul class="space-y-2">
+                        <li><i class="fas fa-check-circle text-blue-200 mr-2"></i>Python, JavaScript, C</li>
+                        <li><i class="fas fa-check-circle text-blue-200 mr-2"></i>React.js, Next.js, Node.js</li>
+                        <li><i class="fas fa-check-circle text-blue-200 mr-2"></i>Web2py, Py4Web</li>
+                        <li><i class="fas fa-check-circle text-blue-200 mr-2"></i>Tailwind CSS, Bootstrap, Redux</li>
+                        <li><i class="fas fa-check-circle text-blue-200 mr-2"></i>MongoDB, MySQL, PostgreSQL</li>
+                        <li><i class="fas fa-check-circle text-blue-200 mr-2"></i>Firebase, Git/GitHub</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-medium">Professional Skills</h4>
+                    <ul class="space-y-2">
+                        <li><i class="fas fa-check-circle text-blue-200 mr-2"></i>Problem Solving</li>
+                        <li><i class="fas fa-check-circle text-blue-200 mr-2"></i>Team Collaboration</li>
+                        <li><i class="fas fa-check-circle text-blue-200 mr-2"></i>Time Management</li>
+                        <li><i class="fas fa-check-circle text-blue-200 mr-2"></i>Communication</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </aside>
 
-            </div><!--//primary-->
-            <div class="secondary col-lg-4 col-12">
-                 <aside class="info aside section">
-                    <div class="section-inner">
-                        <h2 class="heading sr-only">Basic Information</h2>
-                        <div class="content">
-                            <ul class="list-unstyled">
-                                <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span>Uttara, Dhaka</li>
-                                <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span><a href="#">ab.rahmansiyam@gmail.com
-                                </a></li>
-                                <li><i class="fas fa-link"></i><span class="sr-only">Website:</span><a href="#">https://siyamar.github.io/Portfolio/</a></li>
-                            </ul>
-                        </div><!--//content-->  
-                    </div><!--//section-inner-->                 
-                </aside><!--//aside-->
-                
-                <aside class="skills aside section">
-                    <div class="section-inner">
-                        <h2 class="heading">Skills</h2>
-                        <div class="content">
-                            <p class="intro">
-                                Intro about my skills goes here. Keep the list lean and only showing my primary skillset. As I am A Programmer, I am addicted with coding
-                            </p>
-                            
-                            <div class="skillset">
-                               
-                                <div class="item">
-                                    <h3 class="level-title">React.js<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>Expert</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="96%">
-                                        </div>                                      
-                                    </div><!--//level-bar-->                                 
-                                </div>
-                                
-                                <div class="item">
-                                    <h3 class="level-title">Python & Web2py<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>Expert</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="85%">
-                                        </div>                                      
-                                    </div><!--//level-bar-->                                 
-                                </div>
-                                <div class="item">
-                                    <h3 class="level-title">Node & Express<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>Expert</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="90%">
-                                        </div>                                      
-                                    </div><!--//level-bar-->                                 
-                                </div>
-                                
-                                <!--//item-->
-                                
-                                <div class="item">
-                                    <h3 class="level-title">Javascript &amp; jQuery<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>Expert</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="90%">
-                                        </div>                                      
-                                    </div><!--//level-bar-->                                 
-                                </div><!--//item-->
-                                
-                                <div class="item">
-                                    <h3 class="level-title">HTML5, CSS3 &amp; Redux<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>Expert</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="96%">
-                                        </div>                                      
-                                    </div><!--//level-bar-->                                 
-                                </div><!--//item-->
-                                
-                                <div class="item">
-                                    <h3 class="level-title">Talwind CSS & Bootstrap<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>Pro</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="95%">
-                                        </div>                                      
-                                    </div><!--//level-bar-->                                 
-                                </div><!--//item-->
-                                <div class="item">
-                                    <h3 class="level-title">MySQl, PostgreSQL & Mongodb<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>Pro</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="95%">
-                                        </div>                                      
-                                    </div><!--//level-bar-->                                 
-                                </div><!--//item-->
-                                
+    <!-- Main Content -->
+    <main class="content-area">
+        <div class="resume-header">
+            <h1 class="text-3xl font-bold">Resume</h1>
+            <div class="social-icons">
+                <a href="https://github.com/siyamar" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://siyamar.github.io/Abr-Portfolio/" target="_blank"><i class="fas fa-globe"></i></a>
+            </div>
+        </div>
 
-                            </div>              
-                        </div><!--//content-->  
-                    </div><!--//section-inner-->                 
-                </aside><!--//section-->
-                
-                <!-- <aside class="testimonials aside section">
-                    <div class="section-inner">
-                        <h2 class="heading">Testimonials</h2>
-                        <div class="content">
-                            <div class="item">
-                                <blockquote class="quote">                                  
-                                    <p><i class="fas fa-quote-left"></i>Jobaer is an excellent software engineer and he is passionate about what he does. You can totally count on him to deliver your projects!</p>
-                                </blockquote>                
-                                <p class="source"><span class="name">Nizam Farid Ahmed</span><br /><span class="title">COO, Sheraspace</span></p>
-                            </div>< //item-->
-                            
-                            <!-- <p><a class="more-link" href="https://www.linkedin.com/in/jh-sourav-55935017a/" target="_blank"><i class="fas fa-external-link-alt"></i>More on Linkedin</a></p> -->
-                            
-                        <!-- </div>//content
-                    </div>//section-inner
-                </aside>//section
-                 -->
-                <aside class="education aside section">
-                    <div class="section-inner">
-                        <h2 class="heading">Education</h2>
-                        <div class="content">
-                            <div class="item">                      
-                                <h3 class="title"><i class="fas fa-graduation-cap"></i> BSc in Software Engineering</h3>
-                                <h4 class="university">World University of Bangladesh <span class="year">(2021-2024)</span></h4>
-                            </div><!--//item-->
-                            <div class="item">
-                                <h3 class="title"><i class="fas fa-graduation-cap"></i> HSC from Science</h3>
-                                <h4 class="university">Munshirhat College <span class="year">(2017-2019)</span></h4>
-                            </div><!--//item-->
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
-                            
-                <aside class="languages aside section">
-                    <div class="section-inner">
-                        <h2 class="heading">Languages</h2>
-                        <div class="content">
-                            <ul class="list-unstyled">
-                                <li class="item">
-                                    <span class="title"><strong>Bangla:</strong></span>
-                                    <span class="level">Native Speaker <br class="visible-xs"/><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> </span>
-                                </li><!--//item-->
-                                <li class="item">
-                                    <span class="title"><strong>English:</strong></span>
-                                    <span class="level">Professional Proficiency <br class="visible-sm visible-xs"/><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star-half"></i></span>
-                                </li><!--//item-->
-                            </ul>
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
-                
+        <!-- Experience -->
+        <section class="mb-8">
+            <h2 class="section-title text-2xl font-semibold">Experience</h2>
+            <div class="experience-item">
+                <h3 class="font-bold text-lg">Associate Python Developer</h3>
+                <p class="text-gray-600">Jan 2025 - Present | Eon System</p>
+                <p class="mt-2">Worked on projects using Web2py technology for organizations like Hamdard. Focused on developing efficient, secure, and scalable web applications tailored to client requirements.</p>
+            </div>
+        </section>
 
+        <!-- Projects -->
+        <section class="mb-8">
+            <h2 class="section-title text-2xl font-semibold">Projects</h2>
+            <div class="experience-item">
+                <h3 class="font-bold">Restaurant Management System (2023 - 2024)</h3>
+                <p>Built with authentication, order customization, admin dashboards, and profit/loss analysis.</p>
+                <p><strong>Tech:</strong> React, Express, MongoDB, Tailwind CSS, Firebase</p>
+                <a href="https://bistro-boss-a2461.firebaseapp.com" target="_blank" class="text-blue-600">Live Link</a>
+            </div>
+            <div class="experience-item">
+                <h3 class="font-bold">Keto Journey (2023)</h3>
+                <p>A blogging platform with authentication, post creation, commenting, and responsive design.</p>
+                <p><strong>Tech:</strong> React, Express, MongoDB, Tailwind CSS, Firebase</p>
+                <a href="https://keto-journey.web.app/" target="_blank" class="text-blue-600">Live Link</a>
+            </div>
+            <div class="experience-item">
+                <h3 class="font-bold">Dashboard (2023 - Present)</h3>
+                <p>Web-based dashboard to manage orders, users, and provide data visualization with charts.</p>
+                <p><strong>Tech:</strong> Next.js, React, Express, MongoDB, Tailwind CSS</p>
+            </div>
+            <div class="experience-item">
+                <h3 class="font-bold">News Portal (2023 - 2024)</h3>
+                <p>A categorized news website built with Next.js showing latest articles with details.</p>
+                <p><strong>Tech:</strong> Next.js, Express, MongoDB, Tailwind CSS</p>
+                <a href="https://the-dragon-news-nine.vercel.app/" target="_blank" class="text-blue-600">Live Link</a>
+            </div>
+        </section>
 
+        <!-- Education -->
+        <section class="mb-8">
+            <h2 class="section-title text-2xl font-semibold">Education</h2>
+            <div class="experience-item">
+                <h3 class="font-bold text-lg">BSc in Computer Science & Engineering</h3>
+                <p class="text-gray-600">2021 - 2025 | World University of Bangladesh</p>
+            </div>
+            <div class="experience-item">
+                <h3 class="font-bold text-lg">Higher Secondary Certificate (Science)</h3>
+                <p class="text-gray-600">2017 - 2019 | Munshirhat College, Matlab-south</p>
+            </div>
+        </section>
 
-                
-                <aside class="credits aside section">
-                    <div class="section-inner">
-                        <h2 class="heading">Credits</h2>
-                        <div class="content">
-                            <ul class="list-unstyled pb-2">
-                                <li><a href="https://reactjs.org/" target="_blank"><i class="fas fa-external-link-alt"></i>React.js</a></li>
-                                <li><a href="https://getbootstrap.com/" target="_blank"><i class="fas fa-external-link-alt"></i>Bootstrap</a></li>
-                                <li><a href="https://fortawesome.github.io/Font-Awesome/" target="_blank"><i class="fas fa-external-link-alt"></i>FontAwesome</a></li>
-                                <li><a href="https://jquery.com/" target="_blank"><i class="fas fa-external-link-alt"></i>jQuery</a></li>
-                                <li><a href="https://www.python.org/" target="_blank"><i class="fas fa-external-link-alt"></i>Node.js</a></li>
-                                
-                                <li><a href="https://caseyscarborough.com/projects/github-activity/" target="_blank"><i class="fas fa-external-link-alt"></i>GitHub Activity Stream</a></li>
-                                
-                                <li><a href="https://github.com/sdepold/jquery-rss" target="_blank"><i class="fas fa-external-link-alt"></i>Next.js</a></li>
-                                
-
-                            </ul>
-                            
-                            <hr/>
-
-                            
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
-
-                
-              
-            </div><!--//secondary-->    
-        </div><!--//row-->
-    </div><!--//masonry-->
-    
-    <!-- ******FOOTER****** --> 
-    <footer class="footer">
-        <div class="container text-center">
-                <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out our commercial license options via our website: themes.3rdwavemedia.com */-->
-                <small class="copyright">Designed by Abdur Rahman</small>
-        </div><!--//container-->
-    </footer><!--//footer-->
- 
-    <!-- Javascript -->          
-    <script type="text/javascript" src="assets/plugins/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/popper.min.js"></script> 
-    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
-    <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script> 
-    <!-- github calendar plugin -->
-    <script type="text/javascript" src="assets/plugins/github-calendar/dist/github-calendar.min.js"></script>
-    <!-- github activity plugin -->
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/github-activity/github-activity-0.1.5.min.js"></script>
-    <!-- custom js -->
-    <script type="text/javascript" src="assets/js/main.js"></script>            
+        <!-- References -->
+        <section>
+            <h2 class="section-title text-2xl font-semibold">References</h2>
+            <div class="experience-item">
+                <h3 class="font-bold">Kazi Hassan Robin</h3>
+                <p>Associate Professor & Head of CSE, World University of Bangladesh</p>
+                <p>Email: robin1@cse.wub.edu.bd | Phone: +8801820547352</p>
+            </div>
+        </section>
+    </main>
 </body>
-</html> 
-
+</html>
